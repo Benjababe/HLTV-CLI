@@ -14,3 +14,4 @@ Obviously .NET Core 3.1 is needed and all the libraries below to build the proje
 - [HtmlAgilityPack](https://html-agility-pack.net/)
 - [Json.NET](https://www.newtonsoft.com/json)
 - [SocketIOClient](https://github.com/doghappy/socket.io-client-csharp), a very friendly and capable C# socketio client library
+- [System.Configuration.ConfigurationManager](https://www.nuget.org/packages/System.Configuration.ConfigurationManager/)
