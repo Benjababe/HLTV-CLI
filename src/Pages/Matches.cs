@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -29,8 +28,6 @@ namespace HLTV_CLI.src {
 
         //TODO ADD AN OPTION TO SKIP VIEWING MATCHES AND GO STRAIGHT TO SELECTING LIVE MATCHES.
         //TO BE USED AFTER EXITING WATCHING A LIVE MATCH SO THEY CAN IMMEDIATELY CHOOSE AGAIN.
-
-        //TODO HANDLE FILTER INPUT.
 
         public async void Watch(string matchID, string scorebotURL = "") {
             //scoreboard+log is 84x28. for the love of god do not use a resolution lower than that

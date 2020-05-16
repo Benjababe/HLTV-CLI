@@ -52,6 +52,8 @@ namespace HLTV_CLI.src {
             GetEntry(docNode);
         }
 
+        //print to print all matches w/ hint
+        //pHint to print only the hint
         private void GetEntry(HtmlNode docNode, bool print = false, bool pHint = false) {
             if (print)
                 Console.Write(this.printout + this.hint);
@@ -94,6 +96,18 @@ namespace HLTV_CLI.src {
                 case "6":
                     Streams.Show(docNode, !this.over);
                     GetEntry(docNode, pHint: true);
+                    break;
+                case "7":
+                    Highlights.Show(docNode);
+                    GetEntry(docNode, print: true);
+                    break;
+                case "8":
+                    MatchStats.Show(docNode);
+                    GetEntry(docNode, pHint: true);
+                    break;
+                case "9":
+                    PlayerOfTheMatch.Show(docNode);
+                    GetEntry(docNode, print: true);
                     break;
                 default:
                     Console.WriteLine("Problem with stuff...\n");

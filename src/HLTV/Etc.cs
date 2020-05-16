@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration;
 using System.Drawing;
 using System.Net.Http;
 
+using CloudflareSolverRe;
 using HtmlAgilityPack;
 
 namespace HLTV_CLI {
@@ -47,8 +47,13 @@ namespace HLTV_CLI {
                 return new HtmlDocument();
             }
             Uri target = new Uri(url);
+            ClearanceHandler cHandler = new ClearanceHandler {
+                MaxTries = 3,
+                ClearanceDelay = 3000
+            };
+
             HttpClientHandler handler = new HttpClientHandler();
-            HttpClient httpClient = new HttpClient(handler);
+            HttpClient httpClient = new HttpClient(cHandler);
 
             string source = "";
             try {

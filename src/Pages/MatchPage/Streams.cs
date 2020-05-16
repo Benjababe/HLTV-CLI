@@ -42,6 +42,7 @@ namespace HLTV_CLI.src {
                 }
             }
             Console.ForegroundColor = holder;
+            Console.WriteLine("");
         }
     }
 }

@@ -117,6 +117,7 @@ namespace HLTV_CLI {
         }
         
         //adv for advanced flag
+        //TODO maybe use a playerstats class instead of a dictionary for stats?
         private Dictionary<string, dynamic> GetAllStats(JObject player, bool adv = false) {
             Dictionary<string, dynamic> allStats = new Dictionary<string, dynamic> {
                 ["nick"] = player["nick"],

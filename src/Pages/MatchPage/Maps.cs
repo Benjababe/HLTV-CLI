@@ -27,7 +27,9 @@ namespace HLTV_CLI.src {
 
                 //map wasn't played/ended before map could be played
                 if (played == null) {
-                    Console.WriteLine(mapName + "(Map unplayed)");
+                    Console.Write(mapName + "(");
+                    Console.Write("Map unplayed", Etc.LOST);
+                    Console.Write(")\n");
                     break;
                 }
 

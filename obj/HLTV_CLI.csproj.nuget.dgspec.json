@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "CloudflareSolverRe": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
             "Colorful.Console": {
               "target": "Package",
               "version": "[1.2.10, )"
@@ -46,13 +50,17 @@
               "target": "Package",
               "version": "[1.11.23, )"
             },
+            "Json.Net": {
+              "target": "Package",
+              "version": "[1.0.22, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
             },
             "SocketIOClient": {
               "target": "Package",
-              "version": "[1.0.3.12, )"
+              "version": "[1.0.3.13, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",

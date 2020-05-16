@@ -9,7 +9,8 @@ Obviously .NET Core 3.1 is needed and all the libraries below to build the proje
 
 ## Libraries used
 
-- [HtmlAgilityPack](https://html-agility-pack.net/)
+- [CloudflareSolverRe](https://github.com/RyuzakiH/CloudflareSolverRe) .NET lib for bypassing cf.
 - [Colorful](http://colorfulconsole.com/) for RGB conversion into console
+- [HtmlAgilityPack](https://html-agility-pack.net/)
 - [Json.NET](https://www.newtonsoft.com/json)
 - [SocketIOClient](https://github.com/doghappy/socket.io-client-csharp), a very friendly and capable C# socketio client library

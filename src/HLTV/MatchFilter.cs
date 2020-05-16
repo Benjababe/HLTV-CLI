@@ -1,6 +1,5 @@
 using System.Collections;
 
-//TODO MOVE THE CONFIGURATIONMANAGER HERE INSTEAD OF MATCHES.CS
 namespace HLTV_CLI.src {
     class MatchFilter {
         public bool liveMatch, LAN;
